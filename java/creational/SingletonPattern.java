@@ -13,7 +13,7 @@ class SingleObject {
     // private constructor
     private SingleObject() {}
 
-    // static method
+    // static getter
     public static SingleObject getInstance() {
         return instance;
     }
