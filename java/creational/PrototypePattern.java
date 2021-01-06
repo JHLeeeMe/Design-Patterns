@@ -1,3 +1,4 @@
+
 /**
  * Prototype Pattern
  *   Cloneable interface를 이용한 패턴
@@ -7,6 +8,7 @@
  *   생성한 객체를 자료구조(HashMap 등...)에 보관 -> 호출시 꺼내서 clone()
  */
 
+import java.util.Map;
 import java.util.HashMap;
 
 abstract class Shape implements Cloneable {
@@ -78,7 +80,7 @@ class Circle extends Shape {
  * Shape concrete class
  */
 class ShapeCache {
-    private static HashMap<Integer, Shape> shapeMap = new HashMap<>();
+    private static Map<Integer, Shape> shapeMap = new HashMap<>();
 
     public static Shape getShape(int shapeId) {
         Shape cachedShape = shapeMap.get(shapeId);
