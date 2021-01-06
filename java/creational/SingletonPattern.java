@@ -36,10 +36,10 @@ public class SingletonPattern {
 
         System.out.println(obj1.num);
 
-        if (System.identityHashCode(obj1) == System.identityHashCode(obj2)) {
+        if (obj1.hashCode() == obj2.hashCode()) {
             System.out.println("obj1 == obj2");
-            System.out.println("obj1 HashCode: " + System.identityHashCode(obj1));
-            System.out.println("obj2 HashCode: " + System.identityHashCode(obj2));
+            System.out.println("obj1 HashCode: " + obj1.hashCode());
+            System.out.println("obj2 HashCode: " + obj2.hashCode());
         } else {
             System.out.println("????");
         }
