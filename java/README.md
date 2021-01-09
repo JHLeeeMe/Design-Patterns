@@ -4,3 +4,4 @@
 - [Abstract Factory Pattern](https://github.com/JHLeeeMe/Design-Patterns/blob/master/java/creational/AbstractFactoryPattern.java)
 - [Singleton Pattern](https://github.com/JHLeeeMe/Design-Patterns/blob/master/java/creational/SingletonPattern.java)
 - [Bulider Pattern](https://github.com/JHLeeeMe/Design-Patterns/blob/master/java/creational/BuilderPattern.java)
+- [Prototype Pattern](https://github.com/JHLeeeMe/Design-Patterns/blob/master/java/creational/PrototypePattern.java)
