@@ -1,6 +1,8 @@
 /**
  * Facade Pattern
- *   복잡한 lib들을 Facade 클래스로 간단하게 사용가능한 API 제공 
+ *   복잡한 lib들을 Facade 클래스로 간단하게 사용가능한 API 제공
+ *   1. Facade class로 직관적인 method 제공
+ *   2. client는 Facade class 말고는 접근x (package로 만들고, default class로 만들어 접근제한을 걸어버리자)
  */
 
 class CPU {
