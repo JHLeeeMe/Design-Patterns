@@ -34,8 +34,6 @@ public class SingletonPattern {
         SingleObject obj2 = SingleObject.getInstance();
         obj2.showMessage();
 
-        System.out.println(obj1.num);
-
         if (obj1.hashCode() == obj2.hashCode()) {
             System.out.println("obj1 == obj2");
             System.out.println("obj1 HashCode: " + obj1.hashCode());
