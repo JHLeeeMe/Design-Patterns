@@ -67,7 +67,7 @@ class ShapeFactory {
 }
 
 public class FlyweightPattern {
-    private static final String[] colors = {"Red", "Green", "Blue", "White", "Black"};
+    private static final String[] COLORS = {"Red", "Green", "Blue", "White", "Black"};
 
     public static void main(String[] args) {
         for (int i=0; i<20; ++i) {
@@ -81,7 +81,7 @@ public class FlyweightPattern {
     }
 
     private static String getRandomColor() {
-        return colors[(int)(Math.random()*colors.length)];
+        return COLORS[(int)(Math.random()*COLORS.length)];
     }
 
     private static int getRandomX() {
