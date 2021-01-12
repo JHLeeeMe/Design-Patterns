@@ -9,3 +9,6 @@
 ### Structural
 - [Facade Pattern](https://github.com/JHLeeeMe/Design-Patterns/blob/master/java/structural/FacadePattern.java)
 - [Flyweight Pattern](https://github.com/JHLeeeMe/Design-Patterns/blob/master/java/structural/FlyweightPattern.java)
+
+### Behavioral
+- [Mediator Pattern](https://github.com/JHLeeeMe/Design-Patterns/blob/master/java/behavioral/MediatorPattern.java)
