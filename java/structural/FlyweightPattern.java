@@ -18,6 +18,7 @@ interface Shape {
     void draw();
 }
 
+/* Concrete Shape */
 class Circle implements Shape {
     private String color;
     private int x;
@@ -50,6 +51,7 @@ class Circle implements Shape {
     }
 }
 
+/* Factory Shape with Flyweight */
 class ShapeFactory {
     private static Map<String, Shape> cache = new HashMap<>();
 
