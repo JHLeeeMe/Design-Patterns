@@ -42,7 +42,7 @@ abstract class User {
     protected abstract void handle(String data);
 }
 
-/* concrete Mediator */
+/* Concrete Mediator */
 class ChatMediator extends Mediator {
     @Override
     public void mediate(String data) {
@@ -52,7 +52,7 @@ class ChatMediator extends Mediator {
     }
 }
 
-/* concrete User */
+/* Conncrete User */
 class ChatUser extends User {
     @Override
     public void handle(String data) {
