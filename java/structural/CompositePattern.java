@@ -21,6 +21,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/* Component class */
 abstract class Component {
     private String name;
 
@@ -37,6 +38,7 @@ abstract class Component {
     }
 }
 
+/* Leaf class */
 class File extends Component {
     private Object data;
 
