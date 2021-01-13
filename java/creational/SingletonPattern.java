@@ -49,8 +49,10 @@ class SingleObject {
 // /* Lazy init + Double Checking Locking (DCL, Thread safe) */
 // class SingleObject {
 //     private volatile static SingleObject instance;  // No CPU cache, only Main memory, DCL에선 필수
-//     public int num = 0;// 
-//     private SingleObject() {}// 
+//     public int num = 0;
+//
+//     private SingleObject() {}
+//
 //     public static SingleObject getInstance() {
 //         if (instance == null) {
 //             synchronized(SingleObject.class) {
@@ -58,9 +60,10 @@ class SingleObject {
 //                     instance = new SingleObject();
 //                 }
 //             }
-//         }// 
+//         }
 //         return instance;
-//     }// 
+//     }
+//
 //     public synchronized void showMessage() {
 //         System.out.println("Hello Singleton!");
 //         System.out.println("num: " + num);
@@ -69,8 +72,9 @@ class SingleObject {
 
 // /* Holder */
 // class SingleObject {
-//     private SingleObject() {}
 //     public int num = 0;
+//
+//     private SingleObject() {}
 //
 //     private static class Holder {
 //         private static final SingleObject INSTANCE = new SingleObject();
