@@ -5,6 +5,7 @@
  *   3. static instance getter
  */
 
+/* Eager init (Thread safe) */
 class SingleObject {
     // static instance
     private static SingleObject instance = new SingleObject();
@@ -18,11 +19,72 @@ class SingleObject {
         return instance;
     }
 
-    public void showMessage() {
+    public synchronized void showMessage() {
         System.out.println("Hello Singleton!");
-        System.out.println("num: " + this.num);
+        System.out.println("num: " + num);
     }
 }
+
+// /* Lazy init + Synchronized (Thread safe) */
+// class SingleObject {
+//     private static SingleObject instance;
+//     public int num = 0;
+//
+//     private SingleObject() {}
+//
+//     public static synchronized SingleObject getInstance() {
+//         if (instance == null) {
+//             instance = new SingleObject();
+//         }
+//
+//         return instance;
+//     }
+//
+//     public synchronized void showMessage() {
+//         System.out.println("Hello Singleton!");
+//         System.out.println("num: " + num);
+//     }
+// }
+
+// /* Lazy init + Double Checking Locking (DCL, Thread safe) */
+// class SingleObject {
+//     private volatile static SingleObject instance;  // No CPU cache, only Main memory, DCL에선 필수
+//     public int num = 0;// 
+//     private SingleObject() {}// 
+//     public static SingleObject getInstance() {
+//         if (instance == null) {
+//             synchronized(SingleObject.class) {
+//                 if (instance == null) {
+//                     instance = new SingleObject();
+//                 }
+//             }
+//         }// 
+//         return instance;
+//     }// 
+//     public synchronized void showMessage() {
+//         System.out.println("Hello Singleton!");
+//         System.out.println("num: " + num);
+//     }
+// }
+
+// /* Holder */
+// class SingleObject {
+//     private SingleObject() {}
+//     public int num = 0;
+//
+//     private static class Holder {
+//         private static final SingleObject INSTANCE = new SingleObject();
+//     }
+//
+//     public static SingleObject getInstance() {
+//         return Holder.INSTANCE;
+//     }
+//
+//     public synchronized void showMessage() {
+//         System.out.println("Hello Singleton!");
+//         System.out.println("num: " + num);
+//     }
+// }
 
 public class SingletonPattern {
     public static void main(String[] args) {
