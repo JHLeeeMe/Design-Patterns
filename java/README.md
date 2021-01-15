@@ -13,3 +13,4 @@
 
 ### Behavioral
 - [Mediator Pattern](https://github.com/JHLeeeMe/Design-Patterns/blob/master/java/behavioral/MediatorPattern.java)
+- [Strategy Pattern](https://github.com/JHLeeeMe/Design-Patterns/blob/master/java/behavioral/StrategyPattern.java)
