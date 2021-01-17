@@ -55,7 +55,7 @@ class LedFramework {
 }
 
 /* Adapter Interface */
-interface ILedFramework {
+interface ILedFrameworkAdapter {
     void ledOff();
 
     // 기능 수정
@@ -66,7 +66,7 @@ interface ILedFramework {
 }
 
 /* Adapter Concrete */
-class LedFrameworkAdapter implements ILedFramework {
+class LedFrameworkAdapter implements ILedFrameworkAdapter {
     private LedFramework led = new LedFramework();
 
     @Override
@@ -111,7 +111,7 @@ public class AdapterPattern {
         */
 
         // LedFrameworkAdapter Pattern 으로 수정, 확장된 프레임워크
-        ILedFramework led = new LedFrameworkAdapter();
+        ILedFrameworkAdapter led = new LedFrameworkAdapter();
 
         led.ledOn("RED");  // prints "LED OFF\n LED RED ON"
         led.ledOn("RED");  // prints "LED OFF\n LED RED ON"
