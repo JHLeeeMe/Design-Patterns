@@ -91,7 +91,7 @@ class LedFrameworkAdapter implements ILedFramework {
     }
 }
 
-class LedFrameworkAdapterPattern {
+public class AdapterPattern {
     public static void main(String[] args) {
         // 기존 프레임워크 사용
         /*
