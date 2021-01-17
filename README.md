@@ -1,2 +1,2 @@
 # Design-Patterns
-Design Patterns Implements (java, python, etc...)
+Design Patterns Implements (java, python, etc....)
