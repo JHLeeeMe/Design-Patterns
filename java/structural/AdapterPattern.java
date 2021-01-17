@@ -93,7 +93,9 @@ class LedFrameworkAdapter implements ILedFrameworkAdapter {
 
 public class AdapterPattern {
     public static void main(String[] args) {
-        // 기존 프레임워크 사용
+        /**
+         * 기존 프레임워크 사용
+         */
         /*
         LedFramework led = new LedFramework();
 
@@ -110,7 +112,9 @@ public class AdapterPattern {
         led.ledOn("RED");  // prints "LED RED ON"
         */
 
-        // LedFrameworkAdapter Pattern 으로 수정, 확장된 프레임워크
+        /** 
+         * LedFrameworkAdapter Pattern 으로 수정, 확장된 프레임워크
+         */
         ILedFrameworkAdapter led = new LedFrameworkAdapter();
 
         led.ledOn("RED");  // prints "LED OFF\n LED RED ON"
